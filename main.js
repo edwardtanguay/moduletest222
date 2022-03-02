@@ -24,4 +24,8 @@ const getOrdersInYearString = (year) => {
 // console.log(`There were ${orders.filter(m => m.orderDate.startsWith('1996')).length} orders in 1996.`);
 // console.log(getOrdersInYearString('1996'));
 // console.log(getOrdersInYearString('1997'));
-['1995', '1996', '1997','1998'].forEach(year => console.log(getOrdersInYearString(year)));
+// ['1995', '1996', '1997','1998'].forEach(year => console.log(getOrdersInYearString(year)));
+
+console.log(`The customer name of ID CONSH is: ${customers.find(m => m.customerID === 'CONSH').companyName}`);
+
+// console.log(customers.find(m => m.customerID === 'COMMI').companyName);

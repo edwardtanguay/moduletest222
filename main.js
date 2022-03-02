@@ -26,6 +26,18 @@ const getOrdersInYearString = (year) => {
 // console.log(getOrdersInYearString('1997'));
 // ['1995', '1996', '1997','1998'].forEach(year => console.log(getOrdersInYearString(year)));
 
-console.log(`The customer name of ID CONSH is: ${customers.find(m => m.customerID === 'CONSH').companyName}`);
+const getCompanyNameById = (id) => {
+	return customers.find(m => m.customerID === id).companyName;
+}
+
+// console.log(`The customer name of ID CONSH is: ${customers.find(m => m.customerID === 'CONSH').companyName}`);
 
 // console.log(customers.find(m => m.customerID === 'COMMI').companyName);
+
+// console.log(getCompanyNameById('BOTTM'));
+['LAUGB', 'FRANR', 'GALED'].forEach(m => console.log(getCompanyNameById(m)));
+// const ids = ['LAUGB', 'FRANR', 'GALED'];
+// ids.forEach(m => console.log(getCompanyNameById(m)));
+
+// console.log('abcdefghijklmnopqrstuvwxyz'.length);
+console.log('abcdefghijklmnopqrstuvwxyz'.split('').reverse().join('-'));
